@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1710cfd-bd3f-4dd5-baba-062fadbe75d9" name="Default" comment="Test Commit From Android Studio">
+    <list default="true" id="d1710cfd-bd3f-4dd5-baba-062fadbe75d9" name="Default" comment="Variables + Types + Concatenation + Interpolation">
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
@@ -32,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="329">
-              <caret line="31" column="104" selection-start-line="31" selection-start-column="104" selection-end-line="31" selection-end-column="104" />
+              <caret line="46" column="105" selection-start-line="46" selection-start-column="105" selection-end-line="46" selection-end-column="105" />
             </state>
           </provider>
         </entry>
@@ -347,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562843392447</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Variables + Types + Concatenation + Interpolation">
+      <created>1562846475108</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1562846475108</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -387,7 +394,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test Commit From Android Studio" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Commit From Android Studio" />
+    <MESSAGE value="Variables + Types + Concatenation + Interpolation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Variables + Types + Concatenation + Interpolation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/local.properties">
@@ -403,7 +411,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
-          <caret line="31" column="104" selection-start-line="31" selection-start-column="104" selection-end-line="31" selection-end-column="104" />
+          <caret line="46" column="105" selection-start-line="46" selection-start-column="105" selection-end-line="46" selection-end-column="105" />
         </state>
       </provider>
     </entry>
