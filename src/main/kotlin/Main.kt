@@ -31,9 +31,10 @@ fun main(args: Array<String>) {
 
     // Notice axe refers to the same object as raviPlayerType1.weapon, this is why when we changed the damage after th assignment, the inflicted value still changed for raviPlayerType1
     axe.damangeInflicted = 5
-    println("Weapon --> ${raviPlayerType1.weapon.name}, Damage --> ${raviPlayerType1.weapon.damangeInflicted}");
+    raviPlayerType1.show()
 
     raviPlayerType1.weapon = Weapon("sword",24)
-    println("Weapon --> ${raviPlayerType1.weapon.name}, Damage --> ${raviPlayerType1.weapon.damangeInflicted}");
+    raviPlayerType1.show()
+
 
 }

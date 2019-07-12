@@ -14,6 +14,8 @@ class PlayerType1(val name: String){ // Tells that when player is created, we ne
             lives : $lives
             level : $level
             score : $score
+            weapon name: ${weapon.name}
+            weapon damage: ${weapon.damangeInflicted}
         """.trimIndent())
         println() // Just to put a space after the print
     }
