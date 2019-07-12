@@ -10,4 +10,7 @@ class VampireKing(name : String) : Vampire(name) {
         super.takeDamage(damage / 2)
     }
 
+    fun runAway() : Boolean{
+        return lives < 2
+    }
 }
