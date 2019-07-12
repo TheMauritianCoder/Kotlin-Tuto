@@ -16,4 +16,11 @@ class Player (val name : String, var level: Int) {
             ****** Inventory details ****** $inventory
         """
     }
+
+    fun showInventory(){
+        for (item in inventory){
+            println(item)
+        }
+        println("*****************************")
+    }
 }
