@@ -21,6 +21,9 @@ fun main(args: Array<String>) {
 
     val dracula = VampireKing("Dracula")
     dracula.takeDamage(30)
-    println("$dracula")
-    println()
+
+    while(dracula.lives > 0){
+        dracula.takeDamage(10)
+    }
+
 }
