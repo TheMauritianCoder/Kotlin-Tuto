@@ -3,6 +3,8 @@ class PlayerType1(val name: String){ // Tells that when player is created, we ne
     var level = 1
     var score = 0
 
+    var weapon : Weapon = Weapon("Fist", 1)
+
     // This is a function, also called behaviour of a class.
     fun show(){
         // Notice the """" --> The 3 double quotes

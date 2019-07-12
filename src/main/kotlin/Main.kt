@@ -21,4 +21,19 @@ fun main(args: Array<String>) {
 
     val roubinaPlayerType2 = PlayerType2("Roubina Player Type 2",5)
     roubinaPlayerType2.show()
+
+    println("------------------------Player 1 Weapons ---------------------------------------")
+    println("Weapon --> ${raviPlayerType1.weapon.name}, Damage --> ${raviPlayerType1.weapon.damangeInflicted}");
+
+    var axe : Weapon = Weapon("Axe",12)
+    raviPlayerType1.weapon = axe
+    println("Weapon --> ${raviPlayerType1.weapon.name}, Damage --> ${raviPlayerType1.weapon.damangeInflicted}");
+
+    // Notice axe refers to the same object as raviPlayerType1.weapon, this is why when we changed the damage after th assignment, the inflicted value still changed for raviPlayerType1
+    axe.damangeInflicted = 5
+    println("Weapon --> ${raviPlayerType1.weapon.name}, Damage --> ${raviPlayerType1.weapon.damangeInflicted}");
+
+    raviPlayerType1.weapon = Weapon("sword",24)
+    println("Weapon --> ${raviPlayerType1.weapon.name}, Damage --> ${raviPlayerType1.weapon.damangeInflicted}");
+
 }
