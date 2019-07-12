@@ -1,36 +1,26 @@
 fun main(args: Array<String>) {
 
-    var ravi : Player = Player("ravi",1)
+//    val enemy = Enemy("Enemy 1",10,3)
+//    println(enemy)
+//
+//    enemy.takeDamage(4)
+//    println(enemy)
+//
+//    enemy.takeDamage(11)
+//    println(enemy)
 
-    val redPotion = Loot("Red Potion",LootType.POTION,7.50)
-    val chestArmor= Loot("Chest Armor",LootType.ARMOR,80.00)
+    val uglyTroll = Troll("Ugly Troll")
+    uglyTroll.takeDamage(30)
+    println(uglyTroll)
+    println()
 
-    ravi.pickLoot(redPotion)
-    ravi.pickLoot(chestArmor)
-    ravi.showInventory()
+    val vampire = Vampire("Vladi")
+    vampire.takeDamage(30)
+    println(vampire)
+    println()
 
-    ravi.pickLoot(Loot("Ring of Perfection",LootType.RING,40.25))
-    ravi.pickLoot(Loot("Invisibility Potion",LootType.POTION,35.95))
-    ravi.showInventory()
-
-    if(ravi.dropLoot(redPotion)){
-        println("*********** $redPotion has been deleted ************d")
-    }else{
-        println("You don't have the item $redPotion")
-    }
-    ravi.showInventory()
-
-
-    val bluePotion = Loot("Blue Potion",LootType.POTION,7.50)
-    if(ravi.dropLoot(bluePotion)){
-        println("*********** $bluePotion has been deleted ************d")
-    }else{
-        println("You don't have the item $bluePotion")
-    }
-
-    ravi.pickLoot(bluePotion)
-    ravi.showInventory()
-
-    ravi.dropLoot("Blue Potion")
-
+    val dracula = VampireKing("Dracula")
+    dracula.takeDamage(30)
+    println("$dracula")
+    println()
 }
