@@ -27,6 +27,10 @@ fun main(args: Array<String>) {
     }else{
         println("You don't have the item $bluePotion")
     }
+
+    ravi.pickLoot(bluePotion)
     ravi.showInventory()
+
+    ravi.dropLoot("Blue Potion")
 
 }

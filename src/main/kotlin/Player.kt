@@ -19,13 +19,16 @@ class Player (val name : String, var level: Int) {
     }
 
     fun showInventory(){
+        println("********* Showing Inventory *********")
         for (item in inventory){
             println(item)
         }
-        println("...")
+        println("")
     }
 
     fun pickLoot(item : Loot){
+        println("Picking Loot --> ${item.name}")
+        println("")
         inventory.add(item)
     }
 
@@ -36,5 +39,11 @@ class Player (val name : String, var level: Int) {
         }else{
             false
         }
+    }
+
+    // Overloading
+    fun dropLoot(name : String):Boolean{
+        println("$name will be dropped")
+        return inventory.removeIf { it.name == name } // just like stream in java
     }
 }
