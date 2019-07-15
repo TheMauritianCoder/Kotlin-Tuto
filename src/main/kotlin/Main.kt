@@ -1,37 +1,35 @@
 fun main(args: Array<String>) {
 
-//    val enemy = Enemy("Enemy 1",10,3)
-//    println(enemy)
-//
-//    enemy.takeDamage(4)
-//    println(enemy)
-//
-//    enemy.takeDamage(11)
-//    println(enemy)
+    val ravi = Player("Ravi",1)
+    ravi.pickLoot(Loot("Invisibility",LootType.POTION,4.0))
+    ravi.pickLoot(Loot("Mithril",LootType.ARMOR,183.0))
+    ravi.pickLoot(Loot("Ring of Speed",LootType.RING,25.0))
+    ravi.pickLoot(Loot("Red Potion",LootType.POTION,2.0))
+    ravi.pickLoot(Loot("Cursed Shield",LootType.ARMOR,-8.0))
+    ravi.pickLoot(Loot("Brass Ring",LootType.RING,1.0))
+    ravi.pickLoot(Loot("Chain Mail",LootType.ARMOR,4.0))
+    ravi.pickLoot(Loot("Gold Ring",LootType.RING,12.0))
+    ravi.pickLoot(Loot("Health Potion",LootType.POTION,3.0))
+    ravi.pickLoot(Loot("Silver Ring",LootType.RING,6.0))
 
-    val uglyTroll = Troll("Ugly Troll")
-    uglyTroll.takeDamage(30)
-    println(uglyTroll)
-    println()
-
-    val vampire = Vampire("Vladi")
-    vampire.takeDamage(30)
-    println(vampire)
-    println()
+    ravi.showInventory()
 
     val dracula = VampireKing("Dracula")
-    dracula.takeDamage(30)
+    println(dracula)
 
-    while(dracula.lives > 0){
-        if(dracula.dodges()){
-            continue
+
+    for(i in 1..10){ // This is for loop with a range of values.
+        while(dracula.lives > 0){
+            if(dracula.dodges()){
+                continue
+            }
+            if(dracula.runAway()){
+                println("Dracula ran away...")
+                break
+            }else{
+                dracula.takeDamage(12)
+            }
         }
-        if(dracula.runAway()){
-            println("Dracula ran away...")
-            break
-        }else{
-            dracula.takeDamage(10)
-        }
+        println("---------------------------------------------")
     }
-
 }

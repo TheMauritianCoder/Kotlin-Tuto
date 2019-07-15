@@ -20,15 +20,19 @@ class Player (val name : String, var level: Int) {
 
     fun showInventory(){
         println("********* Showing Inventory *********")
+        var total : Double = 0.0
         for (item in inventory){
             println(item)
+            total += item.value
         }
-        println("")
+        println("================================")
+        println("Total Value = $total")
+        println("================================")
     }
 
     fun pickLoot(item : Loot){
-        println("Picking Loot --> ${item.name}")
-        println("")
+//        println("Picking Loot --> ${item.name}")
+//        println("")
         inventory.add(item)
     }
 
