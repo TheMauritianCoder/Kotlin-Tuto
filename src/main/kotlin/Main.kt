@@ -23,7 +23,15 @@ fun main(args: Array<String>) {
     dracula.takeDamage(30)
 
     while(dracula.lives > 0){
-        dracula.takeDamage(10)
+        if(dracula.dodges()){
+            continue
+        }
+        if(dracula.runAway()){
+            println("Dracula ran away...")
+            break
+        }else{
+            dracula.takeDamage(10)
+        }
     }
 
 }
